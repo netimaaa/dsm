@@ -116,7 +116,7 @@ export const Main: React.FC<Props> = ({ className }) => {
               viewport={{ once: true, amount: 0.5 }}
             >
               <button className="flex items-center group transition-all duration-500 hover:translate-x-[8px] mt-16">
-                <div className="font-bold text-[#B3B3B3]">отправить</div>
+                <div className="font-bold text-[#B3B3B3]">сделать запрос</div>
                 <div className="ml-3 w-[40px] h-[1px] bg-[#F1F1F2] relative">
                   <div className="absolute top-[0px] left-[31px] rotate-[0deg] origin-right rounded-lg w-[9px] h-[1px] opacity-0 bg-[#F1F1F2] transition-all duration-300 group-hover:rotate-[30deg] group-hover:opacity-100" />
                   <div className="absolute top-[0px] left-[31px] rotate-[0deg] origin-right rounded-lg w-[9px] h-[1px] opacity-0 bg-[#F1F1F2] transition-all duration-300 group-hover:rotate-[-30deg] group-hover:opacity-100" />
