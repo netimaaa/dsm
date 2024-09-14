@@ -42,6 +42,7 @@ export const MSection: React.FC<Props> = ({ className }) => {
       </motion.div>
       <Image
         className="absolute top-0 left-[33%] opacity-10"
+        width={1084} height={1403}
         src="/m.svg"
         alt=""
       />

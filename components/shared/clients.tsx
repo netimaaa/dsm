@@ -44,24 +44,28 @@ export const Clients: React.FC<Props> = ({ className }) => {
             <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
+              height={32}
               src="/1.svg"
               alt=""
             />
             <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
+              height={73}
               src="/2.svg"
               alt=""
             />
             <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
+              height={34}
               src="/3.svg"
               alt=""
             />
             <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
+              height={36}
               src="/4.svg"
               alt=""
             />
@@ -76,24 +80,28 @@ export const Clients: React.FC<Props> = ({ className }) => {
             <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
+              height={53}
               src="/5.svg"
               alt=""
             />
             <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
+              height={71}
               src="/6.svg"
               alt=""
             />
             <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
+              height={55}
               src="/7.svg"
               alt=""
             />
             <Image
               className="pl-1 transition-all duration-300 hover:scale-110"
               width={120}
+              height={48}
               src="/8.svg"
               alt=""
             />

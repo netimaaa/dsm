@@ -103,7 +103,7 @@ export const DSection: React.FC<Props> = ({ className }) => {
       >
         крупные клиенты
       </motion.div>
-      <Image className="absolute top-[18%] left-[55%]" src="/D.svg" alt="" />
+      <Image width={661} height={1402} className="absolute top-[18%] left-[55%]" src="/D.svg" alt="" />
       <AboutUs />
       <Clients />
     </div>

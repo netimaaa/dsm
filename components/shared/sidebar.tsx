@@ -50,12 +50,23 @@ const VARIANTS = {
 export const Sidebar: React.FC<Props> = ({ className }) => {
   const { active, setActive, setControls } = useTransitionStore();
   const router = useRouter();
+  const ref = React.useRef(null)
   const controls = useAnimation();
   const { stateReceived, setStateReceived } = useActiveTransitionStore();
 
   React.useEffect(() => {
     setControls(controls);
   }, [controls, setControls]);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      controls.start({
+        scaleY: 0,
+        transition: { duration: 0.3 },
+        transformOrigin: active ? "top" : "bottom",
+      });
+    }, 500);
+  }, [ref])
 
   const handleClick = async () => {
     setActive(!active);
@@ -93,12 +104,13 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
     <div>
       <motion.div
         animate={controls}
-        initial={{ scaleY: 0 }}
+        initial={{ scaleY: 1 }}
         style={{ transformOrigin: active ? "bottom" : "top" }}
         transition={{ ease: [0.22, 1, 0.36, 1] }}
         className="h-screen w-screen fixed z-20 bg-[#252525]"
       />
       <div
+        ref={ref}
         className={cn(
           "w-screen h-screen flex justify-between p-10 relative z-10",
           className
@@ -111,10 +123,10 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
           className="flex flex-col justify-between h-full top-0 left-0 relative"
         >
           <div>
-            <Image src="/logo.svg" alt="" />
+            <Image width={60} height={126} src="/logo.svg" alt="" />
           </div>
           <div className="mb-4">
-            <Image src="/logo-b.svg" alt="" />
+            <Image width={60} height={31} src="/logo-b.svg" alt="" />
           </div>
         </motion.div>
 
@@ -186,6 +198,8 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
             <Image
               className="transition-all duration-300 hover:scale-105 "
               src="/phone.svg"
+              width={40}
+              height={40}
               alt=""
             />
           </button>
