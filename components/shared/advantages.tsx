@@ -1,10 +1,9 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { Oswald } from "next/font/google";
 import React from "react";
 import { easeInOut, motion } from "framer-motion";
 import { AdvantagesBlock } from "./advantages-block";
-import { bebas } from "@/app/layout";
+import { bebas } from ".";
 
 interface Props {
   className?: string;

@@ -8,6 +8,7 @@ import {
   useActiveTransitionStore,
   useTransitionStore,
 } from "@/store/store-trans";
+import Image from 'next/image'
 
 interface Props {
   className?: string;
@@ -110,10 +111,10 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
           className="flex flex-col justify-between h-full top-0 left-0 relative"
         >
           <div>
-            <img src="/logo.svg" alt="" />
+            <Image src="/logo.svg" alt="" />
           </div>
           <div className="mb-4">
-            <img src="/logo-b.svg" alt="" />
+            <Image src="/logo-b.svg" alt="" />
           </div>
         </motion.div>
 
@@ -182,7 +183,7 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
             </Link>
           </div>
           <button className="mt-auto">
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-105 "
               src="/phone.svg"
               alt=""

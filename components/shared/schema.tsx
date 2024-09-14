@@ -1,7 +1,7 @@
-import { bebas } from "@/app/layout";
 import { cn } from "@/lib/utils";
 import { easeInOut, motion } from "framer-motion";
 import React from "react";
+import { bebas } from ".";
 
 interface Props {
   className?: string;

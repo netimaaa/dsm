@@ -15,7 +15,9 @@ interface Props {
 
 export const SmoothScrollSection: React.FC<Props> = ({ className }) => {
   const lenis = useLenis();
+  /* eslint-disable */ 
   const [scrollProgress, setScrollProgress] = useState(0);
+  /* eslint-disable */ 
   const [isAutoScrolling, setIsAutoScrolling] = useState(false);
   const [prevScrollY, setPrevScrollY] = useState(0);
 

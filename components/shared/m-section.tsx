@@ -4,6 +4,7 @@ import React from "react";
 import { ProjectsLast } from "./projects-last";
 import { ProjectAndButton } from "./project-and-button";
 import { motion } from "framer-motion";
+import Image from 'next/image'
 
 interface Props {
   className?: string;
@@ -39,7 +40,7 @@ export const MSection: React.FC<Props> = ({ className }) => {
       >
         #viseKrisi
       </motion.div>
-      <img
+      <Image
         className="absolute top-0 left-[33%] opacity-10"
         src="/m.svg"
         alt=""

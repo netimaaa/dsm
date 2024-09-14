@@ -4,6 +4,7 @@ import React from "react";
 import { AboutUs } from "./about-us";
 import { easeInOut, easeOut, motion } from "framer-motion";
 import { Clients } from "./clients";
+import Image from 'next/image'
 
 interface Props {
   className?: string;
@@ -102,7 +103,7 @@ export const DSection: React.FC<Props> = ({ className }) => {
       >
         крупные клиенты
       </motion.div>
-      <img className="absolute top-[18%] left-[55%]" src="/D.svg" alt="" />
+      <Image className="absolute top-[18%] left-[55%]" src="/D.svg" alt="" />
       <AboutUs />
       <Clients />
     </div>

@@ -1,6 +1,6 @@
-import { bebas } from "@/app/layout";
 import { cn } from "@/lib/utils";
 import React from "react";
+import { bebas } from ".";
 
 interface Props {
   className?: string;

@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { AboutUsBlock } from "./about-us-block";
 import { easeInOut, motion } from "framer-motion";
-import { bebas } from "@/app/layout";
+import { bebas } from ".";
 
 interface Props {
   className?: string;

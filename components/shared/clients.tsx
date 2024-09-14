@@ -2,7 +2,8 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { easeInOut, motion } from "framer-motion";
-import { bebas } from "@/app/layout";
+import Image from 'next/image'
+import { bebas } from ".";
 
 interface Props {
   className?: string;
@@ -40,25 +41,25 @@ export const Clients: React.FC<Props> = ({ className }) => {
             viewport={{ once: true, amount: 0.5 }}
             className="row-start-1 flex items-center justify-center gap-[180px]"
           >
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
               src="/1.svg"
               alt=""
             />
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
               src="/2.svg"
               alt=""
             />
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
               src="/3.svg"
               alt=""
             />
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
               src="/4.svg"
@@ -72,25 +73,25 @@ export const Clients: React.FC<Props> = ({ className }) => {
             viewport={{ once: true, amount: 0.5 }}
             className="raw-start-2 flex items-center justify-center gap-[180px]"
           >
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
               src="/5.svg"
               alt=""
             />
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
               src="/6.svg"
               alt=""
             />
-            <img
+            <Image
               className="transition-all duration-300 hover:scale-110"
               width={120}
               src="/7.svg"
               alt=""
             />
-            <img
+            <Image
               className="pl-1 transition-all duration-300 hover:scale-110"
               width={120}
               src="/8.svg"

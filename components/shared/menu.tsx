@@ -1,5 +1,4 @@
 "use client";
-import { bebas } from "@/app/layout";
 import { cn } from "@/lib/utils";
 import {
   useActiveTransitionStore,
@@ -7,6 +6,7 @@ import {
 } from "@/store/store-trans";
 import { useRouter } from "next/navigation";
 import React from "react";
+import { bebas } from ".";
 
 interface Props {
   className?: string;
