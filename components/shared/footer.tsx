@@ -11,7 +11,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
     <div
       id="scheme"
       className={cn(
-        "w-screen h-screen bg-[#2C2C2C] flex items-center justify-center",
+        "h-screen bg-[#2C2C2C] flex items-center justify-center",
         className
       )}
     >

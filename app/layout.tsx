@@ -20,7 +20,6 @@ export default function RootLayout({
       >
         <Sidebar className="fixed" />
         <SmoothScrolling>{children}</SmoothScrolling>
-        
       </body>
     </html>
   );

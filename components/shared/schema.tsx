@@ -11,7 +11,7 @@ export const Schema: React.FC<Props> = ({ className }) => {
   return (
     <div
       id="scheme"
-      className={cn("w-screen h-screen bg-[#2C2C2C]", className)}
+      className={cn("h-screen bg-[#2C2C2C]", className)}
     >
       <div className="pb-[80px] pt-[140px] pl-[250px] w-[700px] relative z-10">
         <motion.div

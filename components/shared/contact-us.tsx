@@ -11,7 +11,7 @@ export const ContactUs: React.FC<Props> = ({ className }) => {
   return (
     <div
       id="contact"
-      className={cn("w-screen h-screen bg-[#2C2C2C]", className)}
+      className={cn(" h-screen bg-[#2C2C2C]", className)}
     >
       <div className="py-[80px] pl-[250px] w-[700px] relative z-10">
         <motion.div

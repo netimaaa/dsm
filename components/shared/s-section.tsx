@@ -11,7 +11,7 @@ interface Props {
 
 export const SSection: React.FC<Props> = ({ className }) => {
   return (
-    <div className={cn("w-screen bg-[#2C2C2C] h-[200vh] relative", className)}>
+    <div className={cn("bg-[#2C2C2C] h-[200vh] relative", className)}>
       <div className="absolute top-[35%] left-[25%]">
         <motion.img
           initial={{ scale: 0, opacity: 0 }}

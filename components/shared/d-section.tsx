@@ -12,7 +12,7 @@ interface Props {
 
 export const DSection: React.FC<Props> = ({ className }) => {
   return (
-    <div className={cn("w-screen bg-[#2C2C2C] h-[200vh] relative", className)}>
+    <div className={cn("bg-[#2C2C2C] h-[200vh] relative", className)}>
       <motion.div
         initial={{ y: -10, x: -5, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

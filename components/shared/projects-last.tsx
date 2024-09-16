@@ -10,10 +10,10 @@ interface Props {
 
 export const ProjectsLast: React.FC<Props> = ({ className }) => {
   return (
-    <div id="projects" className={cn("h-screen w-screen", className)}>
+    <div id="projects" className={cn("h-screen", className)}>
       <div className="py-[50px] pl-[250px] w-[700px] relative z-10">
         <div>
-          <div className="flex justify-between items-center w-[1300px] mt-16">
+          <div className="flex justify-between items-center w-[1300px] mt-8">
             <div className="flex flex-col justify-between h-[400px]">
               <div
                 className={`${bebas.className} text-[250px] text-[#F1F1F2] opacity-10 leading-[220px] flex`}

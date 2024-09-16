@@ -11,7 +11,7 @@ interface Props {
 
 export const Clients: React.FC<Props> = ({ className }) => {
   return (
-    <div id="clients" className={cn("h-screen w-screen", className)}>
+    <div id="clients" className={cn("h-screen", className)}>
       <div className="py-[80px] pl-[380px] w-[700px] relative z-10">
         <div className="mt-16">
           <motion.div
